@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Agendamento de Corte de Cabelo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <h1>Login do Administrador</h1>
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+            <button type="submit" class="button">Login</button>
+        </form>
+        <p id="loginError" style="color: red; display: none;">Usuário ou senha incorretos.</p>
+    </div>
+
+    <div class="container" id="adminContainer" style="display: none;">
+        <h1>Painel do Administrador</h1>
+        <button onclick="window.history.back()" class="button">Voltar</button>
+        <form id="addHorarioForm">
+            <h2>Adicionar Horário Disponível</h2>
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" required>
+            <button type="submit" class="button">Adicionar</button>
+        </form>
+        <h2>Horários Disponíveis</h2>
+        <ul id="listaHorariosAdmin" class="list"></ul>
+        <h2>Agendamentos</h2>
+        <ul id="listaAgendamentos" class="list"></ul>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

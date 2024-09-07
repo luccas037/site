@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente - Agendamento de Corte de Cabelo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Painel do Cliente</h1>
+        <form id="agendarForm">
+            <h2>Agendar Corte de Cabelo</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="horario">Horário:</label>
+            <select id="horario" required></select>
+            <button type="submit" class="button">Agendar</button>
+        </form>
+        <h2>Horários Disponíveis</h2>
+        <ul id="listaHorarios" class="list"></ul>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
